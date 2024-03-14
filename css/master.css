@@ -1,0 +1,56 @@
+body {
+    background-color: rgba(144, 144, 231, 0.473);
+    margin: 0px;
+    padding: 0px  ;
+    text-align: center;
+  background-image: url(https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg);
+}
+
+h1 {
+    margin-bottom: 5%;
+    color: rgb(136, 163, 232);
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+
+
+button{
+    width: 75px ;
+    height: 50px;
+    font-size: 30px  ;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0px;
+    background-color: white;
+    color: black;
+    border-style: name;
+}
+
+*{
+    font-family:'Courier New', Courier, monospace;
+    color: gray;
+
+}
+
+
+#love{
+    background-color: rgb(222, 219, 34);
+}
+#love1{
+    background-color: orange;
+}
+
+#love2{
+    background-color:magenta ;
+}
+ 
+#love3{
+    background-color: cornflowerblue;
+}
+#love4{
+    background-color: greenyellow;
+}
+#love5{
+    background-color: firebrick;
+}
