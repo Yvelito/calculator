@@ -6,62 +6,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Standard Calculator</title>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
 
-    <header>
-       <center><h1>Standard Calculator</h1></center>
-    </header>
-    <main>
-        <section>
-            <section>
-                <form action="" name="Calculator">
-                    <input type="text" name="">
-                </form>
-                <strong>Resulta: </strong><span>0</span>
-            </section>
-            <section>
-                <section>
-                    <button value="%">%</button>
-                    <button value="C/E">C/E</button>
-                    <button value="C">C</button>
-                    <button id="love" value="&larr;">&larr;</button>
-                </section>
-                <section>
-                    <button value="1/x"><span><span>1</span><span>/</span><span>x</span></span></button>
-                    <button value="x^2">x<span>2</span></button>
-                    <button value="√">√</button>
-                    <button id="love5" value="/">÷</button>
-                </section>
-                <section>
-                    <button value="7">7</button>
-                    <button value="8">8</button>
-                    <button value="9">9</button>
-                    <button id="love4" value="*">×</button>
-                </section>
-                <section>
-                    <button value="4">4</button>
-                    <button value="5">5</button>
-                    <button value="6">6</button>
-                    <button id="love2" value="-">-</button>
-                </section>
-                <section>
-                    <button value="1">1</button>
-                    <button value="2">2</button>
-                    <button value="3">3</button>
-                    <button id="love1" value="+">+</button>
-                </section>
-                <section>
-                    <button value="-/+">-/+</button>
-                    <button value="0">0</button>
-                    <button value=".">.</button>
-                    <button id="love3" value="=">=</button>
-                </section>
-            </section>
-        </section>
-    </main>
+    <body>
 
+        <header>
+           <center><h1>YVELITO CALCULATOR</h1></center>
+        </header>
+        <main>
+            <section>
+                <section>
+                    <form action="" name="Calculator">
+                        <input id="inputbox" readonly>
+                    </form>
+    
+                </section>
+                <section>
+                    <section>
+                        <button value="%" onclick="appendToInputbox('%')">%</button>
+                        <button class="clear" value="C/E" onclick="clearInput()">C/E</button>
+                        <button class="clear" value="C" onclick="clearInput()">C</button>
+                        <button id="love" value="&larr;" onclick="clearLast()">←</button>
+                    </section>
+                    <section>
+                        <button value="1/x" onclick="appendToInputbox('1/')">1/x</button>
+                        <button value="x^2" onclick="appendToInputbox('**2')">x²</button>
+                        <button value="√" onclick="appendToInputbox('Math.sqrt(')")>√</button>
+                        <button id="love5" value="/" onclick="appendToInputbox('/')">÷</button>
+                    </section>
+                    <section>
+                        <button value="7" onclick="appendToInputbox('7')">7</button>
+                        <button value="8" onclick="appendToInputbox('8')">8</button>
+                        <button value="9" onclick="appendToInputbox('9')">9</button>
+                        <button id="love4" value="*" onclick="appendToInputbox('*')">x</button>
+                    </section>
+                    <section>
+                        <button value="4" onclick="appendToInputbox('4')">4</button>
+                        <button value="5" onclick="appendToInputbox('5')">5</button>
+                        <button value="6" onclick="appendToInputbox('6')">6</button>
+                        <button id="love2" value="-" onclick="appendToInputbox('-')">-</button>
+                    </section>
+                    <section>
+                        <button value="1" onclick="appendToInputbox('1')">1</button>
+                        <button value="2" onclick="appendToInputbox('2')">2</button>
+                        <button value="3" onclick="appendToInputbox('3')">3</button>
+                        <button id="love1" value="+" onclick="appendToInputbox('+')">+</button>
+                    </section>
+                    <section>
+                        <button value="-/+" onclick="appendToInputbox('-/+')">+/-</button>
+                        <button value="0" onclick="appendToInputbox('0')">0</button>
+                        <button value="." onclick="appendToInputbox('.')">.</button>
+                        <button id="love3" value="=" onclick="calculate()">=</button>
+                    </section>
+                </section>
+            </section>
+        </main>
 
 </body>
 

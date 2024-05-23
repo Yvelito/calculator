@@ -7,26 +7,43 @@ body {
 }
 
 h1 {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    margin-top: 4%;
     color: rgb(136, 163, 232);
-    font-weight: normal;
+    font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
   }
+
+  #inputbox {
+    width: 380px;
+    height: 50px;
+    color: black;
+    font-size: 2rem;
+  }
+
+
+
+
 
 
 button{
     width: 75px ;
     height: 50px;
-    font-size: 30px  ;
-    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50px;
     margin: 10px;
     padding: 0px;
     background-color: white;
     color: black;
     border-style: name;
+    cursor: pointer;
 }
 
+button:hover{
+    background-color: gray;
+}
 *{
     font-family:'Courier New', Courier, monospace;
     color: gray;
@@ -34,23 +51,24 @@ button{
 }
 
 
-#love{
+#love:hover{
     background-color: rgb(222, 219, 34);
 }
-#love1{
+#love1:hover{
     background-color: orange;
 }
 
-#love2{
+#love2:hover{
     background-color:magenta ;
 }
  
-#love3{
+#love3:hover{
     background-color: cornflowerblue;
 }
-#love4{
+#love4:hover{
     background-color: greenyellow;
 }
-#love5{
+#love5:hover{
     background-color: firebrick;
 }
+
